@@ -39,6 +39,7 @@ def generate_vessels():
             'speed': f'{random.randint(20, 90)} MPH'
         })
         if len(vessels) == 10:
+            print('Vessels created!')
             return True
 generate_vessels()
 
@@ -48,6 +49,7 @@ def move_vessels():
         movement = float(random.random() / 1000000)
         vessel['latitude'] += movement
         vessel['longitude'] += movement
+    print('Moved!')
 
 
 @app.route("/")
