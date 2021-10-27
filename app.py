@@ -1,11 +1,13 @@
 from flask import Flask, jsonify
 from faker import Faker
+from flask_cors import CORS
 import random
 # from mpl_toolkits.basemap import Basemap
 #bm = Basemap()
 fake = Faker()
 
 app = Flask(__name__)
+CORS(app)
 
 vessels = []
 
