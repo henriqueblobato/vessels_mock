@@ -29,7 +29,7 @@ def generate_vessels():
                 'complete': f'{random.randint(20, 85)}%',
                 'speed': f'{random.randint(20, 90)} MPH'
             })
-        if len(vessels) == 20:
+        if len(vessels) == 10:
             print('Vessels created!')
             return True
 
