@@ -5,6 +5,7 @@ import random
 from uuid import uuid4
 fake = Faker()
 Faker.seed(0)
+random.seed(0)
 
 app = Flask(__name__)
 CORS(app)
