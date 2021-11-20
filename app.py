@@ -4,7 +4,7 @@ from flask_cors import CORS
 import random
 from uuid import uuid4
 fake = Faker()
-fake.seed(1)
+Faker.seed(0)
 
 app = Flask(__name__)
 CORS(app)
